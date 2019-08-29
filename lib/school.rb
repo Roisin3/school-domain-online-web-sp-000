@@ -5,6 +5,11 @@ class School
   
   ROSTER = {}
   
+  def roster=(roster)
+    @roster= roster
+    ROSTER << roster
+  end
+  
   
   
 end
