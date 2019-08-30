@@ -12,7 +12,16 @@ class School
     roster[grade] << student_name
   end
   
-  def grade(num)
-    puts 
+  def grade(stu_grade)
+    roster(stu_grade)
+  end
+  
+  def sort
+    sorted = []
+    roster.each do |grade, student|
+      sorted[grade] = student.sort
+    end
+    sorted
+  end
   
 end
